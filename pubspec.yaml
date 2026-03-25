@@ -1,0 +1,42 @@
+name: bus_desktop
+description: "Projeto de Reconhecimento Facial e Geolocalização - Bus Desktop"
+
+# Impede a publicação acidental no pub.dev
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Ícones padrão do iOS (opcional, mas bom manter)
+  cupertino_icons: ^1.0.2
+
+  # Geolocalização (GPS)
+  geolocator: ^10.1.0
+
+  # Banco de Dados Local (SQLite)
+  sqflite: ^2.3.0
+
+  # Manipulação de caminhos de arquivos
+  path: ^1.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Lints para boas práticas de código
+  flutter_lints: ^3.0.0
+
+flutter:
+  # Habilita o uso do Material Design (Ícones, botões, etc)
+  uses-material-design: true
+
+  # Caso você venha a usar imagens ou fontes personalizadas, 
+  # elas devem ser declaradas abaixo da linha 'assets:'
+  # assets:
+  #   - assets/images/
