@@ -1,42 +1,38 @@
 name: bus_desktop
-description: "Projeto de Reconhecimento Facial e Geolocalização - Bus Desktop"
-
-# Impede a publicação acidental no pub.dev
+description: "Sistema de Monitoramento do Transporte Escolar - SEMEC Conceição do Araguaia"
 publish_to: 'none'
 
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: '>=3.1.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
 
-  # Ícones padrão do iOS (opcional, mas bom manter)
-  cupertino_icons: ^1.0.2
+  # Icones padrão do iOS
+  cupertino_icons: ^1.0.8
 
-  # Geolocalização (GPS)
-  geolocator: ^10.1.0
-
-  # Banco de Dados Local (SQLite)
+  # [BANCO DE DADOS] Essencial para resolver o erro do seu log
   sqflite: ^2.3.0
+  sqflite_common_ffi: ^2.3.0+2
+  sqflite_common_ffi_web: ^0.4.0
 
-  # Manipulação de caminhos de arquivos
-  path: ^1.9.0
+  # [LOCALIZAÇÃO] Para o monitoramento em tempo real
+  geolocator: ^10.1.1
+
+  # [CÂMERA] Para o Reconhecimento Facial
+  camera: ^0.11.0+2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-  # Lints para boas práticas de código
   flutter_lints: ^3.0.0
 
 flutter:
-  # Habilita o uso do Material Design (Ícones, botões, etc)
   uses-material-design: true
 
-  # Caso você venha a usar imagens ou fontes personalizadas, 
-  # elas devem ser declaradas abaixo da linha 'assets:'
+  # Se você tiver imagens na pasta assets, descomente as linhas abaixo:
   # assets:
-  #   - assets/images/
+  #   - assets/images/logo_semec.png
